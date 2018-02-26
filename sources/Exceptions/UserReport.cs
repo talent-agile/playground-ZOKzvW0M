@@ -6,7 +6,6 @@ namespace Exceptions
 {
     public class UserReport
     {
-        private readonly ILog _logger;
         private readonly IUserRepository _userRepository;
         private readonly IFileSystem _fileSystem;
 
@@ -17,6 +16,8 @@ namespace Exceptions
             _fileSystem = fileSystem;
         }
 // }
+        private readonly ILog _logger;
+
         public bool SaveListOfUsers(string filePath)
         {
             var allUsers = _userRepository.GetAllUsers();
