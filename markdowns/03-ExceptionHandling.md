@@ -16,7 +16,7 @@ The base `Exception` class provides three main properties:
 
 In your program execution flow, you will eventually use methods that could throw exceptions. Unhandled exceptions will halt your process and crash the application, thus managing the potential thrown exceptions is a key to have a stable application.
 
-Catching thrown exceptions in a block of code in done with the `try ... catch` block code :
+Catching thrown exceptions in a block of code is done with the `try ... catch` block code :
 
 ```C#
 try 
